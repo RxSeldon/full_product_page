@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'widgets/product_header.dart';
+import 'widgets/product_variations.dart';
+import 'widgets//product_specs.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -11,7 +13,12 @@ class ProductPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [ProductHeader(), SizedBox(height: 80)],
+            children: const [
+              ProductHeader(),
+              ProductVariations(),
+              ProductSpecs(),
+              SizedBox(height: 80),
+            ],
           ),
         ),
       ),

@@ -23,7 +23,7 @@ class ProductHeader extends StatelessWidget {
             children: const [
               Text(
                 "\$17.00",
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
               ),
               SizedBox(height: 6),
               Text(
