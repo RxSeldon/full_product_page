@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/product_header.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
