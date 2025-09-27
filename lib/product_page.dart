@@ -11,15 +11,7 @@ class ProductPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              ProductHeader(),
-              ProductVariations(),
-              ProductSpecs(),
-              ProductReviews(),
-              ProductDelivery(),
-              ProductRecommendations(),
-              SizedBox(height: 80),
-            ],
+            children: const [ProductHeader(), SizedBox(height: 80)],
           ),
         ),
       ),

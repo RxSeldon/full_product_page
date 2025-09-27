@@ -59,9 +59,9 @@ flutter:
 
   assets: 
     - assets/topbar.png
-    - variation1.png
-    - variation2.png
-    - variation3.png
+    - var1.png
+    - var2.png
+    - var3.png
     - veronica.png
     - mostpopu1.png
     - mostpop3.png
@@ -70,4 +70,3 @@ flutter:
     - yml4.png
     - yml5.png
     - yml6.png
-    
