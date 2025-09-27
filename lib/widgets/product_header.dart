@@ -5,14 +5,16 @@ class ProductHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image.asset(
           "assets/topbar.png",
-          height: 300,
+          height: screenHeight * 0.45,
           width: double.infinity,
           fit: BoxFit.cover,
+          alignment: Alignment.topCenter,
         ),
         Padding(
           padding: const EdgeInsets.all(12.0),
