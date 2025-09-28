@@ -3,6 +3,7 @@ import 'widgets/product_header.dart';
 import 'widgets/product_variations.dart';
 import 'widgets/product_specs.dart';
 import 'widgets/product_delivery.dart';
+import 'widgets/product_reviews.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -19,6 +20,7 @@ class ProductPage extends StatelessWidget {
               ProductVariations(),
               ProductSpecs(),
               ProductDelivery(),
+              ProductReviews(),
               SizedBox(height: 80),
             ],
           ),
