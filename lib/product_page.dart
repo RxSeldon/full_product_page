@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'widgets/product_header.dart';
 import 'widgets/product_variations.dart';
-import 'widgets//product_specs.dart';
+import 'widgets/product_specs.dart';
+import 'widgets/product_delivery.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -17,6 +18,7 @@ class ProductPage extends StatelessWidget {
               ProductHeader(),
               ProductVariations(),
               ProductSpecs(),
+              ProductDelivery(),
               SizedBox(height: 80),
             ],
           ),
