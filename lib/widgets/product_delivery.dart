@@ -10,7 +10,7 @@ class ProductDelivery extends StatelessWidget {
         margin: const EdgeInsets.symmetric(vertical: 6),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
-          border: Border.all(color: Colors.blue),
+          border: Border.all(color: const Color.fromARGB(238, 0, 76, 255)),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Row(
@@ -28,7 +28,10 @@ class ProductDelivery extends StatelessWidget {
                 const SizedBox(width: 8),
                 Text(
                   days,
-                  style: const TextStyle(fontSize: 14, color: Colors.blue),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    color: Color.fromARGB(238, 0, 76, 255),
+                  ),
                 ),
               ],
             ),
