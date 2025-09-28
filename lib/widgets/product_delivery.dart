@@ -5,9 +5,8 @@ class ProductDelivery extends StatelessWidget {
 
   Widget _buildOption(String title, String days, String price) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 4),
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 6),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
         decoration: BoxDecoration(
           border: Border.all(color: const Color.fromARGB(238, 0, 76, 255)),
@@ -56,7 +55,7 @@ class ProductDelivery extends StatelessWidget {
             "Delivery",
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 10),
           _buildOption("Standard", "5-7 days", "\$3,00"),
           _buildOption("Express", "1-2 days", "\$12,00"),
         ],
