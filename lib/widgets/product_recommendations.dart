@@ -59,7 +59,7 @@ class ProductRecommendations extends StatelessWidget {
               crossAxisCount: 2,
               crossAxisSpacing: 12,
               mainAxisSpacing: 2,
-              childAspectRatio: 0.65,
+              childAspectRatio: 0.75,
             ),
             itemBuilder: (context, index) {
               final product = products[index];
