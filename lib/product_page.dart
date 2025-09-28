@@ -5,6 +5,7 @@ import 'widgets/product_specs.dart';
 import 'widgets/product_delivery.dart';
 import 'widgets/product_reviews.dart';
 import 'widgets/product_mostPopular.dart';
+import 'widgets/product_recommendations.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -23,7 +24,8 @@ class ProductPage extends StatelessWidget {
               ProductDelivery(),
               ProductReviews(),
               ProductMostpopular(),
-              SizedBox(height: 80),
+              ProductRecommendations(),
+              SizedBox(height: 40),
             ],
           ),
         ),
@@ -36,12 +38,14 @@ class ProductPage extends StatelessWidget {
         ),
         child: Row(
           children: [
+            Icon(Icons.favorite_border, color: Colors.black, size: 30),
+            const SizedBox(width: 20),
             Expanded(
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.grey[300],
-                  foregroundColor: Colors.black,
+                  backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+                  foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -50,12 +54,12 @@ class ProductPage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(width: 10),
+            const SizedBox(width: 20),
             Expanded(
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
+                  backgroundColor: const Color.fromARGB(255, 0, 126, 230),
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),

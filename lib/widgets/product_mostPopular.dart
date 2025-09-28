@@ -85,8 +85,8 @@ class ProductMostpopular extends StatelessWidget {
                   SizedBox(width: 12),
                   CircleAvatar(
                     radius: 20,
-                    backgroundColor: const Color.fromARGB(255, 0, 126, 230),
-                    child: const Icon(Icons.arrow_forward, color: Colors.white),
+                    backgroundColor: Color.fromARGB(255, 0, 126, 230),
+                    child: Icon(Icons.arrow_forward, color: Colors.white),
                   ),
                 ],
               ),
