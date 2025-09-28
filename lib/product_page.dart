@@ -4,6 +4,7 @@ import 'widgets/product_variations.dart';
 import 'widgets/product_specs.dart';
 import 'widgets/product_delivery.dart';
 import 'widgets/product_reviews.dart';
+import 'widgets/product_mostPopular.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -21,6 +22,7 @@ class ProductPage extends StatelessWidget {
               ProductSpecs(),
               ProductDelivery(),
               ProductReviews(),
+              ProductMostpopular(),
               SizedBox(height: 80),
             ],
           ),
