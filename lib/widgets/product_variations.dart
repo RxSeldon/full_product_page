@@ -43,7 +43,7 @@ class ProductVariations extends StatelessWidget {
               const Spacer(),
               CircleAvatar(
                 radius: 20,
-                backgroundColor: Colors.blue,
+                backgroundColor: const Color.fromARGB(255, 0, 126, 230),
                 child: const Icon(Icons.arrow_forward, color: Colors.white),
               ),
             ],

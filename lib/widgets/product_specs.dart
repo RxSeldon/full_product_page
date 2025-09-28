@@ -33,6 +33,46 @@ class ProductSpecs extends StatelessWidget {
                 ),
                 child: const Text("Cotton 95%", style: TextStyle(fontSize: 16)),
               ),
+              const SizedBox(width: 8),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 6,
+                ),
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 244, 206, 219),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Text("Nylon 5%", style: TextStyle(fontSize: 16)),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          const Text(
+            "Origin",
+            style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(255, 175, 189, 224),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: const Text("EU", style: TextStyle(fontSize: 16)),
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              const Text(
+                "Size Guide",
+                style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600),
+              ),
+              const Spacer(),
+              CircleAvatar(
+                radius: 20,
+                backgroundColor: const Color.fromARGB(255, 0, 126, 230),
+                child: const Icon(Icons.arrow_forward, color: Colors.white),
+              ),
             ],
           ),
         ],
