@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProductSpecs extends StatelessWidget {
   const ProductSpecs({super.key});
@@ -10,9 +11,12 @@ class ProductSpecs extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Specifications",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
+            style: GoogleFonts.raleway(
+              fontSize: 24,
+              fontWeight: FontWeight.w800,
+            ),
           ),
           const SizedBox(height: 12),
           const Text(
@@ -31,7 +35,10 @@ class ProductSpecs extends StatelessWidget {
                   color: const Color.fromARGB(255, 244, 206, 219),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Text("Cotton 95%", style: TextStyle(fontSize: 16)),
+                child: Text(
+                  "Cotton 95%",
+                  style: GoogleFonts.raleway(fontSize: 16),
+                ),
               ),
               const SizedBox(width: 8),
               Container(
@@ -43,7 +50,10 @@ class ProductSpecs extends StatelessWidget {
                   color: const Color.fromARGB(255, 244, 206, 219),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Text("Nylon 5%", style: TextStyle(fontSize: 16)),
+                child: Text(
+                  "Nylon 5%",
+                  style: GoogleFonts.raleway(fontSize: 16),
+                ),
               ),
             ],
           ),

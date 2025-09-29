@@ -50,7 +50,6 @@ class ProductRecommendations extends StatelessWidget {
           ),
           const SizedBox(height: 12),
 
-          // ✅ Grid with 2 columns
           GridView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),

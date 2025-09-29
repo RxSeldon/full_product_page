@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProductVariations extends StatelessWidget {
   const ProductVariations({super.key});
@@ -12,9 +13,12 @@ class ProductVariations extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Text(
+              Text(
                 "Variations",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
+                style: GoogleFonts.raleway(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w800,
+                ),
               ),
               const SizedBox(width: 12),
               Container(
@@ -26,7 +30,13 @@ class ProductVariations extends StatelessWidget {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Text("Pink", style: TextStyle(fontSize: 16)),
+                child: Text(
+                  "Pink",
+                  style: GoogleFonts.raleway(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
               ),
               const SizedBox(width: 8),
               Container(
@@ -38,7 +48,13 @@ class ProductVariations extends StatelessWidget {
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Text("M", style: TextStyle(fontSize: 16)),
+                child: Text(
+                  "M",
+                  style: GoogleFonts.raleway(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
               ),
               const Spacer(),
               CircleAvatar(

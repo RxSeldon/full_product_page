@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProductDelivery extends StatelessWidget {
   const ProductDelivery({super.key});
@@ -36,7 +37,10 @@ class ProductDelivery extends StatelessWidget {
             ),
             Text(
               price,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              style: GoogleFonts.raleway(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
             ),
           ],
         ),
@@ -51,13 +55,16 @@ class ProductDelivery extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
+          Text(
             "Delivery",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
+            style: GoogleFonts.raleway(
+              fontSize: 24,
+              fontWeight: FontWeight.w800,
+            ),
           ),
           const SizedBox(height: 10),
-          _buildOption("Standard", "5-7 days", "\$3,00"),
-          _buildOption("Express", "1-2 days", "\$12,00"),
+          _buildOption("Standard", "5-7 days", "\$3.00"),
+          _buildOption("Express", "1-2 days", "\$12.00"),
         ],
       ),
     );
