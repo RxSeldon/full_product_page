@@ -19,9 +19,12 @@ class ProductSpecs extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          const Text(
+          Text(
             "Material",
-            style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600),
+            style: GoogleFonts.raleway(
+              fontSize: 21,
+              fontWeight: FontWeight.w600,
+            ),
           ),
           const SizedBox(height: 10),
           Row(
@@ -37,7 +40,10 @@ class ProductSpecs extends StatelessWidget {
                 ),
                 child: Text(
                   "Cotton 95%",
-                  style: GoogleFonts.raleway(fontSize: 16),
+                  style: GoogleFonts.raleway(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
               const SizedBox(width: 8),
@@ -52,15 +58,21 @@ class ProductSpecs extends StatelessWidget {
                 ),
                 child: Text(
                   "Nylon 5%",
-                  style: GoogleFonts.raleway(fontSize: 16),
+                  style: GoogleFonts.raleway(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 12),
-          const Text(
+          Text(
             "Origin",
-            style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600),
+            style: GoogleFonts.raleway(
+              fontSize: 21,
+              fontWeight: FontWeight.w700,
+            ),
           ),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
@@ -68,7 +80,13 @@ class ProductSpecs extends StatelessWidget {
               color: const Color.fromARGB(255, 175, 189, 224),
               borderRadius: BorderRadius.circular(8),
             ),
-            child: const Text("EU", style: TextStyle(fontSize: 16)),
+            child: Text(
+              "EU",
+              style: GoogleFonts.raleway(
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           ),
           const SizedBox(height: 12),
           Row(

@@ -50,7 +50,11 @@ class ProductHeader extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           child: Text(
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam arcu mauris, scelerisque eu mauris id, pretium pulvinar sapien.",
-            style: GoogleFonts.nunitoSans(color: Colors.black, fontSize: 15),
+            style: GoogleFonts.nunitoSans(
+              color: Colors.black,
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+            ),
           ),
         ),
       ],
